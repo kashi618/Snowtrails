@@ -8,12 +8,14 @@
 }
 
 body{
+    height: 100vh;
     background:black;
     background-image:url(../Images/background.jpg);
     background-size:cover;
-    overflow-y: scroll;
+    background-position: center;
+    /*overflow-y: scroll;
     height: 150%;
-    width: 75%;
+    width: 75%;*/
     background-color: #fff;
 }
 
