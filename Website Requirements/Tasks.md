@@ -16,7 +16,7 @@ Sketch (on paper or digitally) a low-fidelity prototype of your website’s main
 
 - Navigation bar
     - Title/logo of snowtrails   
-    - Buttons
+    - Buttons with links to pages
         - Contact page
         - Home page
         - About page
