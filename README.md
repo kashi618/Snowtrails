@@ -1,3 +1,3 @@
 # Collaborators
 - Aleksy
-- Gabriel
+- Gabriel Corpuz (C24411304)
