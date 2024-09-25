@@ -9,7 +9,7 @@ Sketch (on paper or digitally) a low-fidelity prototype of your website’s main
 ---
 
 # Task 3:
-Sketch (on paper or digitally) a low-fidelity prototype of your website’s main page.
+Deliver 3 (three) HTML pages following your client’s requests.
 
 ## Home Page
 **The main entry page of your website, following the structure from your prototype.**
