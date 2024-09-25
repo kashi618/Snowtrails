@@ -16,7 +16,7 @@ Sketch (on paper or digitally) a low-fidelity prototype of your website’s main
 
 - Navigation bar
     - Title/logo of snowtrails   
-    - Buttons
+    - Buttons with links to pages
         - Contact page
         - Home page
         - About page
@@ -24,7 +24,16 @@ Sketch (on paper or digitally) a low-fidelity prototype of your website’s main
 - Background
     - Scrollable picture of Mount Everest
 
+- Searchbar
+    
 
+
+### Helpful Websites
+- unsplash.com
+- pexels.com
+- pixabay.com
+- freepik.com
+- commons.wikimedia.org
 
 ## About Page
 **A simple page introducing your client’s business or their story.**
