@@ -10,10 +10,12 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../CSS/style.css">
-        <title>Snowtrails</title>
+        <title>Contact Page</title>
     </head>
 
     <body>
+
+        <!-- Navigation bar-->
         <header>
             <div class="navbar">
                 <div class="logo"><a href="#">Snow Trails</a></div>
@@ -36,20 +38,6 @@
             </div>
         </header>
         
-        <center><h1>Send us your questions!</h1></center>
-        <div class="queries">
-            <input id="queriesInput"   type="text"  placeholder="Enter your name here:"/>
-        </div>
-        <div class="queries">
-            <input id="queriesInput"   type="text"  placeholder="Enter your email here:" />
-        </div>
-        <div class="queries">
-            <input id="queriesInput"   type="text"  placeholder="Enter your phone number here:"/>
-        </div>
-        <div class="queries">
-            <input id="queriesMessage" type="text"  placeholder="Enter your query here:"/>
-        </div>
-
         <script>
             const toggleBtn = document.querySelector('.toggle_btn')
             const toggleBtnIcon = document.querySelector('.toggle_btn i')
@@ -64,6 +52,22 @@
                 : 'fa-solid fa-bars'
             }
         </script>
+
+        <!-- Queries and Messages-->
+        <center><h1>Send us your questions!</h1></center>
+        <div class="queries">
+            <input id="queriesInput"   type="text"  placeholder="Enter your name here:"/>
+        </div>
+        <div class="queries">
+            <input id="queriesInput"   type="text"  placeholder="Enter your email here:" />
+        </div>
+        <div class="queries">
+            <input id="queriesInput"   type="text"  placeholder="Enter your phone number here:"/>
+        </div>
+        <div class="queries">
+            <input id="queriesMessage" type="text"  placeholder="Enter your query here:"/>
+        </div>
+
     </body>
 
 </html>

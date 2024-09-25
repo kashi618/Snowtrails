@@ -1,10 +1,8 @@
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-     
+    font-family: 'Open Sans', sans-serif;    
 }
 
 body{
@@ -13,9 +11,6 @@ body{
     background-image:url(../Images/background.jpg);
     background-size:cover;
     background-position: center;
-    /*overflow-y: scroll;
-    height: 150%;
-    width: 75%;*/
     background-color: #fff;
 }
 
@@ -157,7 +152,10 @@ header{
         left: 2rem;
         width: unset;
     }
+}
 
+
+/* Search Bar */
 .searchBar {
     align-items: center;
 }
@@ -172,6 +170,7 @@ header{
     font-size: 1rem;
 }
 
+/* Queries */
 .queries{
     margin-left: 20px;
     width:100%

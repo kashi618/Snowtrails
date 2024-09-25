@@ -10,11 +10,13 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../CSS/style.css">
-        <title>Snowtrails</title>
+        <title>Snowtrails Main Page</title>
     </head>
 
 
     <body>
+
+        <!-- Navigation bar-->
         <header>
             <div class="navbar">
                 <div class="logo"><a href="#">Snow Trails</a></div>
@@ -38,10 +40,6 @@
             </div>
         </header>
 
-        <div class="searchbar"></div>
-            <input id="searchbarInput" type="text"  placeholder="Search Mountains Here!" />
-        </div>
-
         <script>
             const toggleBtn = document.querySelector('.toggle_btn')
             const toggleBtnIcon = document.querySelector('.toggle_btn i')
@@ -56,6 +54,12 @@
                 : 'fa-solid fa-bars'
             }
         </script>
+
+
+        <!-- Search bar-->
+        <div class="searchbar">
+            <input id="searchbarInput" type="text"  placeholder="Search Mountains Here!" />
+        </div>
 
     </body>
 
