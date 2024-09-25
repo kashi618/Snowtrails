@@ -14,6 +14,18 @@ Sketch (on paper or digitally) a low-fidelity prototype of your website’s main
 ## Home Page
 **The main entry page of your website, following the structure from your prototype.**
 
+- Navigation bar
+    - Title/logo of snowtrails   
+    - Buttons
+        - Contact page
+        - Home page
+        - About page
+
+- Background
+    - Scrollable picture of Mount Everest
+
+
+
 ## About Page
 **A simple page introducing your client’s business or their story.**
 
