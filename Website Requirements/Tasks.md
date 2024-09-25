@@ -24,6 +24,9 @@ Sketch (on paper or digitally) a low-fidelity prototype of your website’s main
 - Background
     - Scrollable picture of Mount Everest
 
+- Searchbar
+    
+
 
 ### Helpful Websites
 - unsplash.com
