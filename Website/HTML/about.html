@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 
 <html>
+    
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../CSS/style.css">
+        <title>Snowtrails</title>
+    </head>
 
-<head>
 
-    <title>About</title>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">Snow Trails</a></div>
+                <ul class="links">
+                    <li><a href="index.html">Main Page</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <a href="#" class="action_btn">Get Started</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
 
-</head>
+            <div class="dropdown_menu">
+                <li><a href="Main Page">Main Page</a></li>
+                    <li><a href="About Us">About Us</a></li>
+                    <li><a href="Contact Us">Contact Us</a></li>
+                    <li><a href="#" class="action_btn">Get Started</a></li>
+            </div>
+        </header>
 
-<body>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
 
-    <h1>This is a Heading</h1>
+            toggleBtn.onclick = function (){
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
 
-    <p>This is a paragraph.</p>
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
 
-</body>
+    </body>
 
 </html>
