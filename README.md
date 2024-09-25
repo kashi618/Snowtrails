@@ -1,2 +1,3 @@
-# Snowtrails
-Website dedicated for Lucas Snow.
+# Collaborators
+- Aleksy
+- Gabriel
