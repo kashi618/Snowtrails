@@ -25,6 +25,12 @@ Sketch (on paper or digitally) a low-fidelity prototype of your website’s main
     - Scrollable picture of Mount Everest
 
 
+### Helpful Websites
+- unsplash.com
+- pexels.com
+- pixabay.com
+- freepik.com
+- commons.wikimedia.org
 
 ## About Page
 **A simple page introducing your client’s business or their story.**
