@@ -157,10 +157,14 @@ header{
 
 /* Search Bar */
 .searchBar {
+    margin: 0 auto;
+    display: flex;
     align-items: center;
 }
 
 #searchbarInput {
+    position: relative;
+    top: 180px;
     width: 100%;
     height: 2.8rem;
     outline: none;
