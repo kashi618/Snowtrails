@@ -13,6 +13,7 @@
         <title>About Page</title>
     </head>
 
+<head>
 
     <body>
 
@@ -30,31 +31,18 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
+    <title>About</title>
 
-            <div class="dropdown_menu">
-                <li><a href="Main Page">Main Page</a></li>
-                    <li><a href="About Us">About Us</a></li>
-                    <li><a href="Contact Us">Contact Us</a></li>
-                    <li><a href="#" class="action_btn">Get Started</a></li>
-            </div>
-        </header>
+</head>
 
-        <script>
-            const toggleBtn = document.querySelector('.toggle_btn')
-            const toggleBtnIcon = document.querySelector('.toggle_btn i')
-            const dropDownMenu = document.querySelector('.dropdown_menu')
+<body>
 
-            toggleBtn.onclick = function (){
-                dropDownMenu.classList.toggle('open')
-                const isOpen = dropDownMenu.classList.contains('open')
+    <h1>This is a Heading</h1>
 
-                toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-            }
-        </script>
+    <p>This is a paragraph.</p>
 
 
     </body>
+</body>
 
 </html>
