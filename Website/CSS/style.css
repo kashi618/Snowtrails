@@ -277,3 +277,13 @@ font-family:Arial, Helvetica, sans-serif
     flex-grow: 1;               /* Allow background div to take available space */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
 }
+
+.background2 {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px); orange; /* Set background color */
+    padding: 20px;              /* Add some padding */
+    border-radius: 8px;        /* Optional: rounded corners */
+    text-align: center;         /* Center the text inside the box */
+    flex-grow: 1;               /* Allow background div to take available space */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.001); /* Optional: shadow effect */
+}
