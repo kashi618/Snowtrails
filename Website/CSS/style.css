@@ -1,8 +1,34 @@
+/* OpenSauceOne Fonts (regular, bold, italic, bold+italic)*/
+@font-face {
+    font-family: "OpenSauceOne";
+    src: url("../Fonts/OpenSauceOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSauceOne";
+    src: url("../Fonts/OpenSauceOne-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSauceOne";
+    src: url("../Fonts/OpenSauceOne-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "OpenSauceOne";
+    src: url("../Fonts/OpenSauceOne-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;    
+    font-family: 'OpenSauceOne';    
 }
 
 body{
