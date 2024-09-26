@@ -143,6 +143,8 @@ a:hover{
     display: flex;
     justify-content: center;
 }
+
+/* Navigation Bar Dropdown Menu Responsive Design */
 @media(max-width: 992px){
     .navbar .links,
     .navbar .action_btn{
