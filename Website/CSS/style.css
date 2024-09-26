@@ -37,7 +37,7 @@ body{
     background-image:url(../Images/background.jpg);
     background-size:cover;
     background-position: center;
-    background-color: #fff;
+    background-color: #000;
 }
 
 li{
@@ -232,6 +232,8 @@ h1 {
 p {
 margin: 10px 0 0;         /* Add top margin */
 color: #FFFFFF;
+text-align: left;
+font-size: 16px;
 }
 
 h6 {
@@ -268,17 +270,25 @@ h6 {
     margin-top: 15rem;
 }
 
+.container2 {
+    display: flex;               /* Use flexbox to align items side by side */
+    align-items: center;        /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start */
+    max-width: 90%;          /* Optional: limit the width of the container */
+    margin-left: 3rem;
+}
+
 .side-image {
-    width: 150px;              /* Set the width of the image */
-    height: auto;              /* Maintain aspect ratio */
+    width: auto;              /* Set the width of the image */
+    height: 300px;              /* Maintain aspect ratio */
     margin-right: 20px;        /* Space between image and text */
     border-radius: 8px;        /* Optional: rounded corners for the image */
 }
 
 .background {
-    background-color: orange; /* Set background color */
+    background-color: rgba(197, 108, 20, 0.9); /* Set background color */
     padding: 20px;              /* Add some padding */
-    border-radius: 8px;        /* Optional: rounded corners */
+    border-radius: 30px;        /* Optional: rounded corners */
     text-align: center;         /* Center the text inside the box */
     flex-grow: 1;               /* Allow background div to take available space */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
