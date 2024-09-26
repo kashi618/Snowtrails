@@ -65,7 +65,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(15px);
     padding: 0.5rem 1rem;
     border: none;
@@ -84,7 +84,7 @@ a:hover{
 }
 .navbar .links{
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 .navbar .toggle_btn{
     color: white;
