@@ -6,17 +6,14 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/script.js"></script>
         <title>Contact Page</title>
     </head>
 
     <body>
-
         <!-- Navigation bar-->
-        <header>
             <div class="navbar">
                 <div class="logo"><a href="#">Snow Trails</a></div>
                 <ul class="links">
@@ -30,28 +27,13 @@
                 </div>
             </div>
 
+        <!-- Navigation Bar Dropdown Menu For Mobile-->
             <div class="dropdown_menu">
                 <li><a href="Main Page">Main Page</a></li>
                 <li><a href="About Us">About Us</a></li>
                 <li><a href="Contact Us">Contact Us</a></li>
                 <li><a href="#" class="action_btn">Get Started</a></li>
             </div>
-        </header>
-        
-        <script>
-            const toggleBtn = document.querySelector('.toggle_btn')
-            const toggleBtnIcon = document.querySelector('.toggle_btn i')
-            const dropDownMenu = document.querySelector('.dropdown_menu')
-
-            toggleBtn.onclick = function (){
-                dropDownMenu.classList.toggle('open')
-                const isOpen = dropDownMenu.classList.contains('open')
-
-                toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-            }
-        </script>
 
         <!-- Queries and Messages-->
         <center><h1>Send us your questions!</h1></center>
