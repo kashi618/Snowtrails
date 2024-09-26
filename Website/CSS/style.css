@@ -233,6 +233,14 @@ p {
 margin: 10px 0 0;         /* Add top margin */
 color: #FFFFFF;
 }
+
+h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+  }
   
 .custom-style {
     font-size: 100px;
@@ -240,7 +248,7 @@ color: #FFFFFF;
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.3);
     -webkit-text-stroke-width: 4px;
     letter-spacing: 5px;
     margin-top: 5rem;
@@ -274,4 +282,17 @@ color: #FFFFFF;
     text-align: center;         /* Center the text inside the box */
     flex-grow: 1;               /* Allow background div to take available space */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+
+.slogan {
+    background-color: rgba(0, 0, 0, 0.7); /* Set background color */  
+    backdrop-filter: blur(15px);    
+    border-radius: 4px;        /* Optional: rounded corners */
+    text-align: center;         /* Center the text inside the box */
+    flex-grow: 1;               /* Allow background div to take available space */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
