@@ -263,11 +263,13 @@ h6 {
     
 .container {
     display: flex;               /* Use flexbox to align items side by side */
-    align-items: center;        /* Center items vertically */
+    align-items: flex-start;        /* Center items vertically */
     justify-content: flex-start; /* Align items to the start */
+    flex-wrap: wrap;
     max-width: 800px;          /* Optional: limit the width of the container */
     margin-left: 3rem;
     margin-top: 15rem;
+    gap: 2rem;
 }
 
 .container2 {
@@ -305,4 +307,23 @@ h6 {
     margin-right: 35%;
     padding-top: 5px;
     padding-bottom: 5px;
+    clear: both;
+}
+
+.polaroid {
+    width: 17rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+.poltext {
+    text-align: center;
+    padding: 10px 20px;
+}
+  
+.polaroid img {
+    width: 100%;
 }
