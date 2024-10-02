@@ -210,6 +210,22 @@ a:hover{
     padding: 0rem 3.5rem 0 1.5rem;
     font-size: 1rem;
 }
+.send_msg {
+    background-color: orange;
+    width: 7rem;
+    height: 5rem;
+    border-radius: 20px;
+    margin-left: 15rem;
+}
+.send_msg:hover{
+    scale: 1.05;
+    color: #ff7300;
+
+}
+.send_msg:active{
+    scale: 0.95;
+
+}
 
 /* FAQ */
 .FAQ {
@@ -222,7 +238,7 @@ a:hover{
     
 }
 .verticalLine {
-    border-right: 10px solid rgb(255, 89, 0);
+    border-right: 3.5px solid rgb(79, 79, 79);
     border-radius: 30px;
     height: 1000px;
     float: left;
