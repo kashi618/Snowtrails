@@ -189,13 +189,14 @@ a:hover{
 .queries{
     margin-left: 3.5rem;
     margin-top: 2rem;
-    width:100%
+    /*width:100%*/
+    float: left;
 }
 #queriesInput {
     width: 38rem;
     height: 2.8rem;
     outline: none;
-    background: rgba(255, 165, 0, 1);
+    background: whitesmoke;
     border-radius: 1.625rem;
     padding: 0 3.5rem 0 1.5rem;
     font-size: 1rem;  
@@ -204,7 +205,7 @@ a:hover{
     width: 38rem;
     height: 25rem;
     outline: none;
-    background: rgba(255, 165, 0, 1);
+    background: whitesmoke;
     border-radius: 1.625rem;
     padding: 0rem 3.5rem 0 1.5rem;
     font-size: 1rem;
@@ -212,15 +213,19 @@ a:hover{
 
 /* FAQ */
 .FAQ {
-    padding-top: 30rem;
-    padding-right: 40rem;
-
+    margin-top: 3rem;
+    float:left;
+    width: 50rem;
+    height: 60rem;
+    border-radius: 30px;
+    background-color: rgba(255, 165, 0, 0.95); /* Set background color */
+    
 }
 .verticalLine {
-    padding-top: 60rem;
-    padding-right: 40rem;
-    border-right: 2px solid rgb(154, 154, 154);
-    height: 500px;
+    border-right: 10px solid rgb(255, 89, 0);
+    border-radius: 30px;
+    height: 1000px;
+    float: left;
 }
 
 
