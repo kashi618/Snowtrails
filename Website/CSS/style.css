@@ -210,7 +210,7 @@ a:hover{
     font-size: 1rem;
 }
 .send_msg {
-    background-color: orange;
+    background-color: #00008b;
     width: 7rem;
     height: 5rem;
     border-radius: 20px;
@@ -218,7 +218,7 @@ a:hover{
 }
 .send_msg:hover{
     scale: 1.05;
-    color: #ff7300;
+    color: #00008b;
 
 }
 .send_msg:active{
@@ -229,19 +229,22 @@ a:hover{
 /* FAQ */
 .FAQ {
     margin-top: 3rem;
+    margin-left: 10rem;
     float:left;
-    width: 50rem;
+    width: 39rem;
     height: 60rem;
     border-radius: 30px;
-    background-color: rgba(255, 165, 0, 0.95); /* Set background color */
+    background-color: white; /* Set background color */
     
 }
-.verticalLine {
-    border-right: 3.5px solid rgb(79, 79, 79);
-    border-radius: 30px;
+
+/* vertical line 
+dv.verticaline {
+    border-right: 5px solid #00008b;
+    border-radius: 10px;
     height: 1000px;
     float: left;
-}
+}*/
 
 
 /* Lucas */
