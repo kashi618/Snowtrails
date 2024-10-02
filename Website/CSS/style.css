@@ -211,6 +211,7 @@ a:hover{
 }
 .send_msg {
     background-color: #00008b;
+    color: #FFFFFF;
     width: 7rem;
     height: 5rem;
     border-radius: 20px;
@@ -218,7 +219,7 @@ a:hover{
 }
 .send_msg:hover{
     scale: 1.05;
-    color: #00008b;
+    color: #FFFFFF;
 
 }
 .send_msg:active{
@@ -232,7 +233,7 @@ a:hover{
     margin-left: 10rem;
     float:left;
     width: 39rem;
-    height: 60rem;
+    height: 40rem;
     border-radius: 30px;
     background-color: white; /* Set background color */
     
@@ -301,7 +302,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    max-width: 90%;
+    max-width: 70%;
     margin: 0 auto;
 }
 
