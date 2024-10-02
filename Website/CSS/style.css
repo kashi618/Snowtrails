@@ -258,25 +258,11 @@ h6 {
     padding-right: 100px
 }
 
-
-
-    
 .container {
-    display: flex;               /* Use flexbox to align items side by side */
-    align-items: flex-start;        /* Center items vertically */
-    justify-content: flex-start; /* Align items to the start */
-    flex-wrap: wrap;
-    max-width: 800px;          /* Optional: limit the width of the container */
-    margin-left: 3rem;
-    margin-top: 15rem;
-    gap: 2rem;
-}
-
-.container2 {
-    display: flex;               /* Use flexbox to align items side by side */
-    align-items: center;        /* Center items vertically */
-    justify-content: flex-start; /* Align items to the start */
-    max-width: 90%;          /* Optional: limit the width of the container */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 90%;
     margin-left: 3rem;
 }
 
@@ -310,20 +296,42 @@ h6 {
     clear: both;
 }
 
+.polcontainer {
+    display: flex;               /* Use flexbox to align items side by side */
+    align-items: flex-start;        /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start */
+    flex-wrap: wrap;
+    max-width: 100%;          /* Optional: limit the width of the container */
+    margin-left: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    gap: 2rem;
+}
+
 .polaroid {
     width: 17rem;
-    background-color: white;
+    background-color: whitesmoke;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 300px;
     text-align: center;
     padding: 10px;
 }
 
 .poltext {
     text-align: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
   
 .polaroid img {
     width: 100%;
+}
+
+.poltext a {
+    color: black; 
+    text-decoration: none; 
+    font-size: 1.3rem; 
+}
+
+.poltext a:hover {
+    text-decoration: underline; 
+    color: orange; 
 }
