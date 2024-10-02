@@ -93,7 +93,7 @@ a:hover{
     display: none;
 }
 .action_btn{
-    background-color: orange;
+    background-color: rgb(255, 165, 0);
     color: white;
     padding: 0.5rem 1rem;
     border: none;
@@ -187,23 +187,24 @@ a:hover{
 
 /* Queries and Messages*/
 .queries{
-    margin-left: 20px;
+    margin-left: 3.5rem;
+    margin-top: 2rem;
     width:100%
 }
 #queriesInput {
-    width: 20rem;
+    width: 38rem;
     height: 2.8rem;
     outline: none;
-    background: #f5f5f5;
+    background: rgba(255, 165, 0, 1);
     border-radius: 1.625rem;
     padding: 0 3.5rem 0 1.5rem;
     font-size: 1rem;  
 }
 #queriesMessage {
-    width: 20rem;
+    width: 38rem;
     height: 25rem;
     outline: none;
-    background: #f5f5f5;
+    background: rgba(255, 165, 0, 1);
     border-radius: 1.625rem;
     padding: 0rem 3.5rem 0 1.5rem;
     font-size: 1rem;
