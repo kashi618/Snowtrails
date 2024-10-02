@@ -247,13 +247,16 @@ a:hover{
 /* Lucas */
 h1 {
     margin: 0;                 /* Remove default margin */
-    color: #FFFFFF;
+    color: #00008b;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
   
 p {
 font-size: 20px;
 margin: 10px 0 0;         /* Add top margin */
-color: #FFFFFF;
+color: #000000;
 text-align: left;
 }
 
@@ -305,7 +308,7 @@ h6 {
 .background {
     background-color: white; /* Set background color */
     padding: 20px;              /* Add some padding */
-    border-radius: 30px;        /* Optional: rounded corners */
+    border-radius: 10px;        /* Optional: rounded corners */
     text-align: center;         /* Center the text inside the box */
     flex-grow: 1;               /* Allow background div to take available space */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
@@ -351,5 +354,5 @@ h6 {
 
 .poltext a:hover {
     text-decoration: underline; 
-    color: orange; 
+    color: #00008b; 
 }
