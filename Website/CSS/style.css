@@ -238,6 +238,10 @@ a:hover{
     
 }
 
+h2 {
+    color:#00008b;
+}
+
 /* vertical line 
 dv.verticaline {
     border-right: 5px solid #00008b;
