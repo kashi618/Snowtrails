@@ -186,6 +186,7 @@ a:hover{
 
 /* Queries and Messages*/
 .queriesheading {
+    text-align: center;
     background-color: #00008b;
     color: white;
     padding: 0.5rem 1rem;
