@@ -185,11 +185,29 @@ a:hover{
 }
 
 /* Queries and Messages*/
-.queries{
-    margin-left: 3.5rem;
+.queriesheading {
+    background-color: #00008b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
     margin-top: 2rem;
+    z-index: 1;
+    display: inline-block;
+    justify-content: center;
+}
+
+.queries{
+    position: relative;
+    margin-left: 3.5rem;
+    margin-top: 5rem;
     /*width:100%*/
-    float: left;
+    z-index: 2;
 }
 #queriesInput {
     width: 38rem;
@@ -228,14 +246,31 @@ a:hover{
 }
 
 /* FAQ */
+.FAQHEADING {
+    background-color: #00008b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    position: absolute;
+    margin-top: 2rem;
+    z-index: 3;
+    display: inline-block;
+}
 .FAQ {
-    margin-top: 3rem;
     margin-left: 10rem;
-    float:left;
     width: 39rem;
-    height: 40rem;
+    height: 20rem;
     border-radius: 30px;
-    background-color: white; /* Set background color */
+    background-color: rgba(white, white, white, 1); /* Set background color */
+    backdrop-filter: blur(15px);
+    position: relative;
+    z-index: 4;
     
 }
 
