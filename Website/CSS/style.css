@@ -58,14 +58,14 @@ a:hover{
 .navbar{
     position: relative;
     width: 100%;
-    height: 60px;
+    height: 3.75rem;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(0.938rem);
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -97,7 +97,7 @@ a:hover{
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
@@ -119,17 +119,17 @@ a:hover{
     display: none;
     position: absolute;
     right: 2rem;
-    top: 145px;
+    top: 9.063rem;
     height: 0;
-    width: 300px;
+    width: 18.75rem;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
+    backdrop-filter: blur(0.938rem);
+    border-radius: 0.625rem;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
 }
 .dropdown_menu.open{
-    height: 240px;
+    height: 15rem;
 }
 .dropdown_menu li{
     padding: 0.7rem;
@@ -144,7 +144,7 @@ a:hover{
 }
 
 /* Navigation Bar Dropdown Menu Responsive Design */
-@media(max-width: 992px){
+@media(max-width: 62rem){
     .navbar .links,
     .navbar .action_btn{
         display: none;
@@ -156,7 +156,7 @@ a:hover{
         display: block;
     }
 }
-@media (max-width: 576px){
+@media (max-width: 36rem){
     .dropdown_menu{
         left: 2rem;
         width: unset;
@@ -214,7 +214,7 @@ a:hover{
     color: #FFFFFF;
     width: 7rem;
     height: 5rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     margin-left: 15rem;
 }
 .send_msg:hover{
@@ -234,7 +234,7 @@ a:hover{
     float:left;
     width: 39rem;
     height: 40rem;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     background-color: white; /* Set background color */
     
 }
@@ -258,12 +258,12 @@ h1 {
     color: #00008b;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
   
 p {
-font-size: 20px;
-margin: 10px 0 0;         /* Add top margin */
+font-size: 1.25rem;
+margin: 0.625rem 0 0;         /* Add top margin */
 color: #000000;
 text-align: left;
 }
@@ -273,7 +273,7 @@ h6 {
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 9px;
+    letter-spacing: 0.563rem;
   }
   
 .logo-text {
@@ -282,7 +282,7 @@ h6 {
     font-size: 10vw; 
     font-weight: bold;
     margin: 0 auto; 
-    padding: 10px;
+    padding: 0.625rem;
     width: 50%;
     text-align: center; 
     position: absolute; 
@@ -295,7 +295,7 @@ h6 {
 .logo-image-container {
     background-size: cover;
     position: relative; 
-    height: 300px;
+    height: 18.75rem;
   }
 
 .container {
@@ -308,46 +308,46 @@ h6 {
 
 .side-image {
     width: auto;              /* Set the width of the image */
-    height: 300px;              /* Maintain aspect ratio */
-    margin-right: 20px;        /* Space between image and text */
-    border-radius: 8px;        /* Optional: rounded corners for the image */
+    height: 18.75rem;              /* Maintain aspect ratio */
+    margin-right: 1.25rem;        /* Space between image and text */
+    border-radius: 0.5rem;        /* Optional: rounded corners for the image */
 }
 
 .background {
     background-color: white; /* Set background color */
-    padding: 20px;              /* Add some padding */
-    border-radius: 10px;        /* Optional: rounded corners */
+    padding: 1.25rem;              /* Add some padding */
+    border-radius: 0.625rem;        /* Optional: rounded corners */
     text-align: center;         /* Center the text inside the box */
     flex-grow: 1;               /* Allow background div to take available space */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
 }
 
 .slogan {
     background-color: rgba(0, 0, 0, 0.7); /* Set background color */  
-    backdrop-filter: blur(15px);    
-    border-radius: 4px;        /* Optional: rounded corners */
+    backdrop-filter: blur(0.938rem);    
+    border-radius: 0.25rem;        /* Optional: rounded corners */
     text-align: center;         /* Center the text inside the box */
     flex-grow: 1;               /* Allow background div to take available space */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
     margin-left: 35%;
     margin-right: 35%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0.313rem;
+    padding-bottom: 0.313rem;
     clear: both;
 }
 
 .polaroid {
     width: 17rem;
     background-color: whitesmoke;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
     text-align: center;
-    padding: 10px;
+    padding: 0.625rem;
     gap: 3rem;
 }
 
 .poltext {
     text-align: center;
-    padding: 15px 20px;
+    padding: 0.938rem 1.25rem;
 }
   
 .polaroid img {
