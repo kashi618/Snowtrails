@@ -258,18 +258,16 @@ a:hover{
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
-    position: absolute;
+    position: relative;
     margin-top: 2rem;
+    text-align: center;
     z-index: 3;
     display: inline-block;
 }
 .FAQ {
-    margin-left: 10rem;
-    width: 39rem;
     height: 20rem;
     border-radius: 1.875rem;
-    background-color: rgba(white, white, white, 1); /* Set background color */
-    backdrop-filter: blur(15px);
+    background-color: white; /* Set background color */
     position: relative;
     z-index: 4;
     
