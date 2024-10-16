@@ -155,8 +155,7 @@ a:hover{
 
 .queries{
     position: relative;
-    margin-left: 3.5rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     /*width:100%*/
     z-index: 2;
 }
@@ -181,10 +180,9 @@ a:hover{
 .send_msg {
     background-color: #00008b;
     color: #FFFFFF;
-    width: 7rem;
-    height: 5rem;
-    border-radius: 1.25rem;
-    margin-left: 15rem;
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 0.25rem 1.2rem 0.25rem 1.2rem;
 }
 .send_msg:hover{
     scale: 1.05;
@@ -203,7 +201,6 @@ a:hover{
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
-    border-radius: 20px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -212,11 +209,10 @@ a:hover{
     margin-top: 2rem;
     text-align: center;
     z-index: 3;
-    display: inline-block;
+    height: 2rem;
 }
 .FAQ {
     height: 20rem;
-    border-radius: 1.875rem;
     background-color: white; /* Set background color */
     text-align: left;
     position: relative;
