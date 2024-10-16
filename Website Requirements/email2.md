@@ -2,8 +2,7 @@ TO: Lucas Snow
 SUBJECT: Improving User Experience - Snowtrails
 
 Dear Mr Snow,
-We are sorry to hear that you are blind, however, that is not a problem. We have added more features which makes the 
-website more accessible to those who are also visually impared.
+We offer our deepest apologies about our un-informed selves for not knowing you are blind. We have worked meticulously to change the website to be accessible to those like you with visual imparities. We will also include a deep explanation of what the website looks like and includes.
 
 First, we have created descriptions for all the images. This means that screen readers and other similar tools can 
 be used to describe the images present.

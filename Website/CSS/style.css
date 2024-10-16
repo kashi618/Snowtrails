@@ -114,56 +114,6 @@ a:hover{
 
 }
 
-/* Navigation Bar Dropdown Menu Mobile*/
-.dropdown_menu{
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 9.063rem;
-    height: 0;
-    width: 18.75rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(0.938rem);
-    border-radius: 0.625rem;
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-}
-.dropdown_menu.open{
-    height: 15rem;
-}
-.dropdown_menu li{
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;;
-}
-.dropdown_menu .action_btn{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-/* Navigation Bar Dropdown Menu Responsive Design */
-@media(max-width: 62rem){
-    .navbar .links,
-    .navbar .action_btn{
-        display: none;
-    }
-    .navbar .toggle_btn{
-        display: block;
-    }
-    .dropdown_menu{
-        display: block;
-    }
-}
-@media (max-width: 36rem){
-    .dropdown_menu{
-        left: 2rem;
-        width: unset;
-    }
-}
-
-
 /* Search Bar */
 .searchbar {
     margin: 0 auto;
@@ -205,8 +155,7 @@ a:hover{
 
 .queries{
     position: relative;
-    margin-left: 3.5rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     /*width:100%*/
     z-index: 2;
 }
@@ -231,10 +180,9 @@ a:hover{
 .send_msg {
     background-color: #00008b;
     color: #FFFFFF;
-    width: 7rem;
-    height: 5rem;
-    border-radius: 1.25rem;
-    margin-left: 15rem;
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 0.25rem 1.2rem 0.25rem 1.2rem;
 }
 .send_msg:hover{
     scale: 1.05;
@@ -253,23 +201,20 @@ a:hover{
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
-    border-radius: 20px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
-    position: absolute;
+    position: relative;
     margin-top: 2rem;
+    text-align: center;
     z-index: 3;
-    display: inline-block;
+    height: 2rem;
 }
 .FAQ {
-    margin-left: 10rem;
-    width: 39rem;
     height: 20rem;
-    border-radius: 1.875rem;
-    background-color: rgba(white, white, white, 1); /* Set background color */
-    backdrop-filter: blur(15px);
+    background-color: white; /* Set background color */
+    text-align: left;
     position: relative;
     z-index: 4;
     
