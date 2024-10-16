@@ -114,35 +114,6 @@ a:hover{
 
 }
 
-/* Navigation Bar Dropdown Menu Mobile*/
-.dropdown_menu{
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 9.063rem;
-    height: 0;
-    width: 18.75rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(0.938rem);
-    border-radius: 0.625rem;
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-}
-.dropdown_menu.open{
-    height: 15rem;
-}
-.dropdown_menu li{
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;;
-}
-.dropdown_menu .action_btn{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 /* Search Bar */
 .searchbar {
     margin: 0 auto;
@@ -247,6 +218,7 @@ a:hover{
     height: 20rem;
     border-radius: 1.875rem;
     background-color: white; /* Set background color */
+    text-align: left;
     position: relative;
     z-index: 4;
     
