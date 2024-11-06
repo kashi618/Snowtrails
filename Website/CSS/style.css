@@ -35,8 +35,10 @@ body{
     height: 100vh;
     background:black;
     background-image:url(../Images/background.jpg);
-    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     background-color: #000;
 }
 
@@ -345,3 +347,4 @@ h6 {
     text-decoration: underline; 
     color: #00008b; 
 }
+
