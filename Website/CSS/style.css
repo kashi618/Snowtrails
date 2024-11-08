@@ -112,8 +112,8 @@ a:hover{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #searchbarInput {
@@ -422,15 +422,6 @@ h6 {
     .dropdown_menu{
         left: 2rem;
         width: unset;
-    }
-
-    /* Search Bar */
-    .searchbar {
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
     }
 }
 
