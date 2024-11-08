@@ -55,8 +55,8 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
-    backdrop-filter: blur(0.938rem);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -70,10 +70,12 @@ a:hover{
 .navbar .logo a{
     font-size: 1.5rem;
     font-weight: bold;
+    color: #00008b;
 }
 .navbar .links{
     display: flex;
     gap: 3rem;
+    color: #00008b;
 }
 .navbar .toggle_btn{
     color: white;
@@ -319,6 +321,35 @@ h6 {
     color: #00008b; 
 }
 
+/*DROP DOWN MENU*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+}
+.dropdown_menu.open{
+    height: 240px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 992px)
 {
@@ -368,6 +399,7 @@ h6 {
         left: 50%; 
         transform: translate(-50%, -50%); 
         mix-blend-mode: screen;
+        z-index: 1;
     }
     
     .logo-image-container {
@@ -376,6 +408,21 @@ h6 {
         height: 18.75rem;
       }
 
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
