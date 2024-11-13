@@ -31,6 +31,17 @@
     font-family: 'OpenSauceOne';    
 }
 
+body{
+    width: auto;
+    background:black;
+    background-image:url(../Images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center-top;
+    background-color: #000;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 li{
     list-style: none;
 }
@@ -349,16 +360,6 @@ h6 {
 /* Small devices (portrait tablets and large phones, 992px and below) */
 @media only screen and (max-width: 992px)
 {
-    body{
-        width: auto;
-        background:black;
-        background-image:url(../Images/background.jpg);
-        background-repeat: no-repeat;
-        background-position: center-top;
-        background-color: #000;
-        background-attachment: fixed;
-        background-size: cover;
-    }
 
     .container{
         display: flex;
@@ -420,16 +421,6 @@ h6 {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body{
-        height: 100vh;
-        background:black;
-        background-image:url(../Images/background.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-color: #000;
-    }
 
     .container {
         display: flex;
