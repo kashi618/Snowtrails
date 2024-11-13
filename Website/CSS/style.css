@@ -350,8 +350,8 @@ h6 {
     justify-content: center;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 992px)
+/* Small devices (portrait tablets and large phones, 992px and below) */
+@media only screen and (max-width: 992px)
 {
     body{
         width: auto;
