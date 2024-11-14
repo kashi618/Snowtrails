@@ -350,7 +350,7 @@ h6 {
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
-    z-index: 2;
+    z-index: 10;
 }
 .dropdown_menu.open{
     height: 240px;
