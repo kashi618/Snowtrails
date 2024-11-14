@@ -75,7 +75,7 @@ a:hover{
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
-    position: sticky;
+    position: relative;
 }
 
 .navbar .logo a{
@@ -404,9 +404,9 @@ h6 {
         text-align: center; 
         position: relative; 
         top: -15%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        mix-blend-mode: screen;
+       /* left: 10%; 
+       /* transform: translate(-50%, -50%); // this stuff is messing up the logo so i comment out for now
+        mix-blend-mode: screen;*/
         z-index: 1;
     }
     
