@@ -75,7 +75,7 @@ a:hover{
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
-    position: relative;
+    position: sticky;
 }
 
 .navbar .logo a{
@@ -367,8 +367,13 @@ h6 {
     justify-content: center;
 }
 
+<<<<<<< Updated upstream
 /* Small devices (portrait tablets and large phones, 992px and below) */
 @media only screen and (max-width: 992px)
+=======
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 300px) and (max-width: 992px)
+>>>>>>> Stashed changes
 {
 
     .container{
@@ -390,8 +395,11 @@ h6 {
         padding-bottom: 0.313rem;
         clear: both;
         position: relative;
+<<<<<<< Updated upstream
         top: 5px;
         z-index: 1;
+=======
+>>>>>>> Stashed changes
     }
 
     .logo-text {
@@ -403,6 +411,12 @@ h6 {
         padding: 0.625rem;
         text-align: center; 
         position: relative; 
+<<<<<<< Updated upstream
+=======
+        top: -15%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+>>>>>>> Stashed changes
         mix-blend-mode: screen;
         z-index: 1;
     }
