@@ -378,6 +378,10 @@ h6 {
 @media only screen and (min-width: 300px) and (max-width: 992px)
 {
 
+    .body {
+        background-position : center;
+    }
+
     .container{
         display: flex;
         flex-direction: column;
