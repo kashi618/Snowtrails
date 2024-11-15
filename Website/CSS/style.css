@@ -366,6 +366,13 @@ h6 {
     justify-content: center;
 }
 
+.content {
+    display: none; 
+}
+.content:first-of-type {
+    display: block;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 300px) and (max-width: 992px)
 {

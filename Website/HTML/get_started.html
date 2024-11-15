@@ -12,6 +12,41 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Snowtrails Main Page</title>
     <meta name="description" content="The Main Page of Snow Trails Travel Agency Website">
+
+    <style>
+        #contentContainer {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .polaroid{
+            width: 220px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            gap: 3rem;
+        }
+
+        .polaroid img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -37,7 +72,102 @@
             <li><a href="get_started.html" class="action_btn">Get Started</a></li>
     </div>     
 
+        <div id="contentContainer">
 
+            <div class="content" style="display: block;">
+                <div class="container">
+                    <div class="polaroid">
+                        <img class="image" src="../Images/Mountains/Mount-Everest_cropped.jpg" alt="Image 1">
+                        <div class="poltext">
+                            <a>Mount Everest</a>
+                        </div>
+                    </div>
+                        <div class="background">
+                            <h1>Mount Everest</h1>
+            
+                            <br><hr><br>
+            
+                            <p>Mount everest yes yes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" style="display: none;">
+                <div class="container">
+                    <div class="polaroid">
+                        <img class="image" src="../Images/Mountains/Monte_bianco_cropped.jpg" alt="Monte Bianco">
+                        <div class="poltext">
+                            <a>Mount Bianco</a>
+                        </div>
+                    </div>
+                        <div class="background">
+                            <h1>Monte Bianco</h1>
+            
+                            <br><hr><br>
+            
+                            <p>Monte Bianco yes yes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" style="display: none;">
+                <div class="container">
+                    <div class="polaroid">
+                        <img class="image" src="../Images/Mountains/Mount-Kilimanjaro_cropped.jpg" alt="Mount Kilimanjaro">
+                        <div class="poltext">
+                            <a>Mount Kilimanjaro</a>
+                        </div>
+                    </div>
+                        <div class="background">
+                            <h1>Mount Kilimanjaro</h1>
+            
+                            <br><hr><br>
+            
+                            <p>Mount Kilimanjaro yes yes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" style="display: none;">
+                <div class="container">
+                    <div class="polaroid">
+                        <img class="image" src="../Images/Mountains/Mount-Denali_cropped.jpg" alt="Mount Denali">
+                        <div class="poltext">
+                            <a>Mount Denali</a>
+                        </div>
+                    </div>
+                        <div class="background">
+                            <h1>Mount Denali</h1>
+            
+                            <br><hr><br>
+            
+                            <p>Mount Denali yes yes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" style="display: none;">
+                <div class="container">
+                    <div class="polaroid">
+                        <img class="image" src="../Images/Mountains/Mount-K2_cropped.jpg" alt="Mount K2">
+                        <div class="poltext">
+                            <a>Mount K2</a>
+                        </div>
+                    </div>
+                        <div class="background">
+                            <h1>Mount K2</h1>
+            
+                            <br><hr><br>
+            
+                            <p>Mount K2 yes yes</p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="button-container">
+            <button id="prevButton">Previous</button>
+            <button id="nextButton">Next</button>
+        </div>
         
     </body>
     <script>
@@ -51,5 +181,27 @@
             ? 'fa-solid fa-xmark'
             : 'fa-solid fa-bars'
         }
+
+    const contents = document.querySelectorAll('.content');
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+
+    let currentIndex = 0;
+
+    function updateContent(index) {
+        contents.forEach((content, i) => {
+            content.style.display = i === index ? 'block' : 'none';
+        });
+    }
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+        updateContent(currentIndex);
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % contents.length;
+        updateContent(currentIndex);
+    });
     </script>
 </html>
