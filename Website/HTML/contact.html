@@ -55,32 +55,34 @@
                 <p>Please fill in below if you would like to contact us.</p>
 
                 <div class="queries">
-                    <li>
-                        <input id="queriesInput"   type="text"  placeholder="First Name:"/>
-
-                        <input id="queriesInput"   type="text"  placeholder="Last Name:"/>
-                    </li>
-
-                    <li>
-                        <input id="queriesInput"   type="text"  placeholder="Email:" />
-                    </li>
-                    
-                    <li>
-                        <input id="queriesInput"   type="text"  placeholder="Phone Number:"/>
-                    </li>
-                    
-                    <li>
-                        <input id="queriesMessage" type="text"  placeholder="Enter Feedback:"/>
-                    </li>
-                    
+                    <input id="queriesInput"   type="text"  placeholder="First Name:"/>
+                    <input id="queriesInput"   type="text"  placeholder="Last Name:"/>
+                    <input id="queriesInput"   type="text"  placeholder="Email:" />
+                    <input id="queriesInput"   type="text"  placeholder="Phone Number:"/>
+                    <input id="queriesMessage"   type="text"  placeholder="Feedback:"/>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="send_msg">
+                        <button id="submitFeedbackBtn" class="send_msg">Share Feedback</button>
                     </div>
-                    <br>
-
-            <div class="container">
-                <div class="send_msg">
-                    <a href="#" class="send_msg">Send Message <i class="fa-solid fa-share"></i></a>
                 </div>
             </div>
+        </div>
+
+        <br>
+
+        <div id="FeedbackConfirmation" style="display: none;">
+            <div class="text-box">
+                <h2>Your Feedback:</h2>
+                <p><strong>First Name:</strong> <span id="submittedFirstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="submittedLastName"></span></p>
+                <p><strong>Email:</strong> <span id="submittedEmail"></span></p>
+                <p><strong>Phone Number:</strong> <span id="submittedPhoneNumber"></span></p>
+                <p><strong>Feedback:</strong> <span id="submittedFeedback"></span></p>
+                <p>Thank you for sharing your valuable Feedback.</p>
+            </div>
+            <br>
         </div>
 
             <br>
@@ -119,5 +121,36 @@
             ? 'fa-solid fa-xmark'
             : 'fa-solid fa-bars'
         }
+
+    const firstNameInput = document.querySelector('input[placeholder="First Name:"]');
+    const lastNameInput = document.querySelector('input[placeholder="Last Name:"]');
+    const emailInput = document.querySelector('input[placeholder="Email:"]');
+    const phoneNumberInput = document.querySelector('input[placeholder="Phone Number:"]');
+    const feedbackInput = document.querySelector('input[placeholder="Feedback:"]');
+    const bookingConfirmation = document.getElementById('FeedbackConfirmation');
+
+    const submittedfirstName = document.getElementById('submittedFirstName');
+    const submittedlastName = document.getElementById('submittedLastName');
+    const submittedEmail = document.getElementById('submittedEmail');
+    const submittedPhoneNumber = document.getElementById('submittedPhoneNumber');
+    const submittedFeedback = document.getElementById('submittedFeedback');
+
+
+    document.getElementById('submitFeedbackBtn').addEventListener('click', () => {
+        
+        bookingConfirmation.style.display = 'block';
+
+        submittedfirstName.textContent = firstNameInput.value;
+        submittedlastName.textContent = lastNameInput.value;
+        submittedEmail.textContent = emailInput.value;
+        submittedPhoneNumber.textContent = phoneNumberInput.value;
+        submittedFeedback.textContent = feedbackInput.value;
+
+        firstNameInput.value = '';
+        lastNameInput.value = '';
+        emailInput.value = '';
+        phoneNumberInput.value = '';
+        feedbackInput.value = '';
+    });
     </script>
 </html>
