@@ -53,11 +53,6 @@
 
     <br>
 
-    <div class="searchbar">
-        <input id="searchbarInput" type="text"  placeholder="Search For Mountains Trips Here!" />
-    </div>
-    <br>
-
         <div id="contentContainer">
 
             <div class="content" style="display: block;">
@@ -95,11 +90,11 @@
                             </div>
                             </div>
                             <br>
-                        <div class="container">
-                            <div class="send_msg">
-                                <a href="#" class="send_msg">Place booking</a>
+                            <div class="container">
+                                <div class="send_msg">
+                                    <button id="submitBookingBtn" class="send_msg">Place booking</button>
+                                </div>
                             </div>
-                        </div>
                 </div>
             </div>
 
@@ -135,11 +130,11 @@
                         </div>
                         </div>
                         <br>
-                    <div class="container">
-                        <div class="send_msg">
-                            <a href="#" class="send_msg">Place booking</a>
+                        <div class="container">
+                            <div class="send_msg">
+                                <button id="submitBookingBtn" class="send_msg">Place booking</button>
+                            </div>
                         </div>
-                    </div>
 
                 </div>
             </div>
@@ -176,11 +171,11 @@
                         </div>
                         </div>
                         <br>
-                    <div class="container">
-                        <div class="send_msg">
-                            <a href="#" class="send_msg">Place booking</a>
+                        <div class="container">
+                            <div class="send_msg">
+                                <button id="submitBookingBtn" class="send_msg">Place booking</button>
+                            </div>
                         </div>
-                    </div>
 
                 </div>
             </div>
@@ -217,11 +212,11 @@
                         </div>
                         </div>
                         <br>
-                    <div class="container">
-                        <div class="send_msg">
-                            <a href="#" class="send_msg">Place booking</a>
+                        <div class="container">
+                            <div class="send_msg">
+                                <button id="submitBookingBtn" class="send_msg">Place booking</button>
+                            </div>
                         </div>
-                    </div>
 
                 </div>
             </div>
@@ -258,9 +253,10 @@
                         </div>
                         </div>
                         <br>
-                    <div class="container">
-                        <div class="send_msg">
-                            <a href="#" class="send_msg">Place booking</a>
+                        <div class="container">
+                            <div class="send_msg">
+                                <button id="submitBookingBtn" class="send_msg">Place booking</button>
+                            </div>
                         </div>
                     </div>
 
@@ -270,7 +266,26 @@
             <div class="button-container">
                 <button id="prevButton" class="action_btn"><i class="fa-solid fa-arrow-left"></i> Previous</button>
                 <button id="nextButton" class="action_btn"><i class="fa-solid fa-arrow-right"></i> Next</button>
-            </div>            
+            </div>     
+
+            <div id="bookingConfirmation" style="display: none;">
+                <div class="text-box">
+                    <h2>Your Booking Details:</h2>
+                    <p><strong>Name:</strong> <span id="submittedName"></span></p>
+                    <p><strong>Group Size:</strong> <span id="submittedGroupSize"></span></p>
+                    <p><strong>Email:</strong> <span id="submittedEmail"></span></p>
+                    <p><strong>Phone Number:</strong> <span id="submittedPhone"></span></p>
+                    <p><strong>Card Number:</strong> <span id="submittedCardNumber"></span></p>
+                    <p><strong>Card Expiry:</strong> <span id="submittedCardExpiry"></span></p>
+                    <p><strong>CSV:</strong> <span id="submittedCsv"></span></p>
+                    <p>Thank you for booking a trip with Snowtrails, Hope to see you soon!</p>
+                </div>
+                <br>
+            </div>
+            
+            <footer>
+                <p> 2024 Snowtrails . All Rights Reserved.</p>
+            </footer>
         
     </body>
     <script>
@@ -306,5 +321,44 @@
         currentIndex = (currentIndex + 1) % contents.length;
         updateContent(currentIndex);
     });
+
+    const nameInput = document.querySelector('input[placeholder="Name:"]');
+    const groupSizeInput = document.querySelector('input[placeholder="Group Size:"]');
+    const emailInput = document.querySelector('input[placeholder="Email:"]');
+    const phoneInput = document.querySelector('input[placeholder="Phone Number:"]');
+    const cardNumberInput = document.querySelector('input[placeholder="Card Number:"]');
+    const cardExpiryInput = document.querySelector('input[placeholder="Card Expiry:"]');
+    const csvInput = document.querySelector('input[placeholder="Csv:"]');
+    const bookingConfirmation = document.getElementById('bookingConfirmation');
+
+    const submittedName = document.getElementById('submittedName');
+    const submittedGroupSize = document.getElementById('submittedGroupSize');
+    const submittedEmail = document.getElementById('submittedEmail');
+    const submittedPhone = document.getElementById('submittedPhone');
+    const submittedCardNumber = document.getElementById('submittedCardNumber');
+    const submittedCardExpiry = document.getElementById('submittedCardExpiry');
+    const submittedCsv = document.getElementById('submittedCsv');
+
+    document.getElementById('submitBookingBtn').addEventListener('click', () => {
+        
+        bookingConfirmation.style.display = 'block';
+
+        submittedName.textContent = nameInput.value;
+        submittedGroupSize.textContent = groupSizeInput.value;
+        submittedEmail.textContent = emailInput.value;
+        submittedPhone.textContent = phoneInput.value;
+        submittedCardNumber.textContent = cardNumberInput.value;
+        submittedCardExpiry.textContent = cardExpiryInput.value;
+        submittedCsv.textContent = csvInput.value;
+
+        nameInput.value = '';
+        groupSizeInput.value = '';
+        emailInput.value = '';
+        phoneInput.value = '';
+        cardNumberInput.value = '';
+        cardExpiryInput.value = '';
+        csvInput.value = '';
+    });
+
     </script>
 </html>
