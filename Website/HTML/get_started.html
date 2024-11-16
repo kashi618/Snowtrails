@@ -14,37 +14,9 @@
     <meta name="description" content="The Main Page of Snow Trails Travel Agency Website">
 
     <style>
-        #contentContainer {
-            text-align: center;
-            margin: 20px auto;
+        .text-box img{
+            max-width: 100%;
         }
-
-        .polaroid{
-            width: 220px;
-        }
-
-        button {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            gap: 3rem;
-        }
-
-        .polaroid img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-        }
-
     </style>
 
 </head>
@@ -59,7 +31,7 @@
             <li><a href="about.html">ABOUT US</a></li>
             <li><a href="contact.html">CONTACT US</a></li>
         </ul>
-        <a href="getStarted.html" class="action_btn">Get Started</a>
+        <a href="get_started.html" class="action_btn">Get Started</a>
         <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -72,102 +44,233 @@
             <li><a href="get_started.html" class="action_btn">Get Started</a></li>
     </div>     
 
+    <div class="background-container">
+        <div class="logo-text">GET STARTED</div>
+        <div class="slogan">
+            <h6>book your next adventure</h6>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="searchbar">
+        <input id="searchbarInput" type="text"  placeholder="Search For Mountains Trips Here!" />
+    </div>
+    <br>
+
         <div id="contentContainer">
 
             <div class="content" style="display: block;">
-                <div class="container">
-                    <div class="polaroid">
-                        <img class="image" src="../Images/Mountains/Mount-Everest_cropped.webp" alt="Image 1">
-                        <div class="poltext">
-                            <a>Mount Everest</a>
+                <div class="text-box"">
+                    <div class="container">
+                        <div class="polaroid">
+                            <img class="image" src="../Images/Mountains/Mount-Everest_cropped.webp" alt="Image 1">
+                            <p class="caption">Destination: Mt. Everest</p>
+                        </div>
+
+                        <div class="container" style="flex-direction: column; max-width: 60%; gap: 5 rem;">
+                        <h2>Details</h2>
+                        <p>Overview: Mount Everest, located in the Himalayas on the border between Nepal and the Tibet Autonomous Region of China, is the
+                            highest mountain in the world, standing at 8,848.86 meters (29,031.7 feet) above sea level. Known as Sagarmatha in Nepali and Chomolungma
+                            in Tibetan, it attracts mountaineers from around the globe for its challenging and perilous climb. Everest is renowned for its extreme
+                            altitude, harsh weather conditions, and technical difficulty, making it a coveted but dangerous destination for experienced climbers.
+                            <br><br>Price: €70,000 <br>Duration: 2-3 Months <br>Difficulty: Extreme <br>Group size: 2-3 (+2 Guides) <br> Equipment: Provided </p>
                         </div>
                     </div>
-                        <div class="background">
-                            <h1>Mount Everest</h1>
-            
-                            <br><hr><br>
-            
-                            <p>Mount everest yes yes</p>
-                    </div>
+
+                    <br>
+
+                        <h2>Booking</h2>
+                        <p>Please fill in below if you would like to book a trip to Mt.Everest</p>
+        
+                        <div class="queries">
+                                <input id="queriesInput"   type="text"  placeholder="Name:"/>
+                                <input id="queriesInput"   type="text"  placeholder="Group Size:"/>
+                                <input id="queriesInput"   type="text"  placeholder="Email:" />
+                                <input id="queriesInput"   type="text"  placeholder="Phone Number:"/>
+                                <input id="queriesInput"   type="text"  placeholder="Card Number:"/>
+                            <div class="container">
+                                <input id="queriesInput"   type="text"  placeholder="Card Expiry:"/>
+                                <input id="queriesInput"   type="text"  placeholder="Csv:"/>
+                            </div>
+                            </div>
+                            <br>
+                        <div class="container">
+                            <div class="send_msg">
+                                <a href="#" class="send_msg">Place booking</a>
+                            </div>
+                        </div>
                 </div>
             </div>
 
             <div class="content" style="display: none;">
-                <div class="container">
-                    <div class="polaroid">
-                        <img class="image" src="../Images/Mountains/Monte_bianco_cropped.webp" alt="Monte Bianco">
-                        <div class="poltext">
-                            <a>Mount Bianco</a>
+                <div class="text-box"">
+                    <div class="container">
+                        <div class="polaroid">
+                            <img class="image" src="../Images/Mountains/Monte_bianco_cropped.webp" alt="Mt. Bianco">
+                            <p class="caption">Destination: Mt. Bianco</p>
+                        </div>
+
+                        <div class="container" style="flex-direction: column; max-width: 60%; gap: 5 rem;">
+                        <h2>Details</h2>
+                        <p>Overview:Mont Blanc is a stunning peak at 4,810 meters, located on the border between France and Italy. Popular with hikers, it offers the famous Tour du Mont Blanc trek, which takes you through scenic alpine meadows, valleys, and mountain passes. The area is known for its breathtaking views, challenging terrain, and diverse landscapes, making it a must-visit for outdoor enthusiasts.
+                            <br><br>Price: €70,000 <br>Duration: 2-3 Months <br>Difficulty: Extreme <br>Group size: 2-3 (+2 Guides) <br> Equipment: Provided </p>
                         </div>
                     </div>
-                        <div class="background">
-                            <h1>Monte Bianco</h1>
-            
-                            <br><hr><br>
-            
-                            <p>Monte Bianco yes yes</p>
+
+                    <br>
+
+                    <h2>Booking</h2>
+                    <p>Please fill in below if you would like to book a trip to Mt.Bianco</p>
+    
+                    <div class="queries">
+                            <input id="queriesInput"   type="text"  placeholder="Name:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Group Size:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Email:" />
+                            <input id="queriesInput"   type="text"  placeholder="Phone Number:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Card Number:"/>
+                        <div class="container">
+                            <input id="queriesInput"   type="text"  placeholder="Card Expiry:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Csv:"/>
+                        </div>
+                        </div>
+                        <br>
+                    <div class="container">
+                        <div class="send_msg">
+                            <a href="#" class="send_msg">Place booking</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
             <div class="content" style="display: none;">
-                <div class="container">
-                    <div class="polaroid">
-                        <img class="image" src="../Images/Mountains/Mount-Kilimanjaro_cropped.webp" alt="Mount Kilimanjaro">
-                        <div class="poltext">
-                            <a>Mount Kilimanjaro</a>
+                <div class="text-box"">
+                    <div class="container">
+                        <div class="polaroid">
+                            <img class="image" src="../Images/Mountains/Mount-Denali_cropped.webp" alt="Mt. Denali">
+                            <p class="caption">Destination: Mt. Denali</p>
+                        </div>
+
+                        <div class="container" style="flex-direction: column; max-width: 60%; gap: 5 rem;">
+                        <h2>Details</h2>
+                        <p>Overview: Mount Denali, located in Alaska, is North America's highest peak, standing at 6,190 meters (20,310 feet). It offers a challenging experience for advanced hikers and mountaineers, with rugged terrain, glaciers, and unpredictable weather. Hikers can explore the Denali National Park, home to stunning wilderness, wildlife, and breathtaking views of the mountain, though reaching the summit requires significant mountaineering skills.
+                            <br><br>Price: €70,000 <br>Duration: 2-3 Months <br>Difficulty: Extreme <br>Group size: 2-3 (+2 Guides) <br> Equipment: Provided </p>
                         </div>
                     </div>
-                        <div class="background">
-                            <h1>Mount Kilimanjaro</h1>
-            
-                            <br><hr><br>
-            
-                            <p>Mount Kilimanjaro yes yes</p>
+
+                    <br>
+
+                    <h2>Booking</h2>
+                    <p>Please fill in below if you would like to book a trip to Mt.Denali</p>
+    
+                    <div class="queries">
+                            <input id="queriesInput"   type="text"  placeholder="Name:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Group Size:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Email:" />
+                            <input id="queriesInput"   type="text"  placeholder="Phone Number:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Card Number:"/>
+                        <div class="container">
+                            <input id="queriesInput"   type="text"  placeholder="Card Expiry:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Csv:"/>
+                        </div>
+                        </div>
+                        <br>
+                    <div class="container">
+                        <div class="send_msg">
+                            <a href="#" class="send_msg">Place booking</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
             <div class="content" style="display: none;">
-                <div class="container">
-                    <div class="polaroid">
-                        <img class="image" src="../Images/Mountains/Mount-Denali_cropped.webp" alt="Mount Denali">
-                        <div class="poltext">
-                            <a>Mount Denali</a>
+                <div class="text-box"">
+                    <div class="container">
+                        <div class="polaroid">
+                            <img class="image" src="../Images/Mountains/Mount-K2_cropped.webp" alt="Mt. K2">
+                            <p class="caption">Destination: Mt. K2</p>
+                        </div>
+
+                        <div class="container" style="flex-direction: column; max-width: 60%; gap: 5 rem;">
+                        <h2>Details</h2>
+                        <p>Overview: Mount K2, located on the border between Paakistan and China, is the second-highest peak in the world at 8,611 meters (28,251 feet). Known for its extreme difficulty and technical challenges, it is one of the most dangerous mountains to climb. While not typically a hiking destination due to its demanding conditions, trekkers can visit the K2 Base Camp in Pakistan's Gilgit-Baltistan region for an unforgettable view of the peak and surrounding landscapes. However, reaching the summit is reserved for experienced climbers.
+                            <br><br>Price: €70,000 <br>Duration: 2-3 Months <br>Difficulty: Extreme <br>Group size: 2-3 (+2 Guides) <br> Equipment: Provided </p>
                         </div>
                     </div>
-                        <div class="background">
-                            <h1>Mount Denali</h1>
-            
-                            <br><hr><br>
-            
-                            <p>Mount Denali yes yes</p>
+
+                    <br>
+
+                    <h2>Booking</h2>
+                    <p>Please fill in below if you would like to book a trip to Mt.K2</p>
+    
+                    <div class="queries">
+                            <input id="queriesInput"   type="text"  placeholder="Name:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Group Size:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Email:" />
+                            <input id="queriesInput"   type="text"  placeholder="Phone Number:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Card Number:"/>
+                        <div class="container">
+                            <input id="queriesInput"   type="text"  placeholder="Card Expiry:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Csv:"/>
+                        </div>
+                        </div>
+                        <br>
+                    <div class="container">
+                        <div class="send_msg">
+                            <a href="#" class="send_msg">Place booking</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
             <div class="content" style="display: none;">
-                <div class="container">
-                    <div class="polaroid">
-                        <img class="image" src="../Images/Mountains/Mount-K2_cropped.webp" alt="Mount K2">
-                        <div class="poltext">
-                            <a>Mount K2</a>
+                <div class="text-box"">
+                    <div class="container">
+                        <div class="polaroid">
+                            <img class="image" src="../Images/Mountains/Mount-Kilimanjaro_cropped.webp" alt="Mt. Kilimanjaro">
+                            <p class="caption">Destination: Mt. Kilimanjaro</p>
+                        </div>
+
+                        <div class="container" style="flex-direction: column; max-width: 60%; gap: 5 rem;">
+                        <h2>Details</h2>
+                        <p>Overview: Mount Kilimanjaro, located in Tanzania, is Africa’s highest peak at 5,895 meters (19,341 feet). Known for its iconic snow-capped summit, it offers a non-technical hike that attracts trekkers of various skill levels. The trek takes hikers through diverse ecosystems, from tropical rainforests to alpine deserts, offering stunning views along the way. Kilimanjaro's summit can be reached via several routes, making it a popular destination for those seeking an adventure without the need for advanced mountaineering skills.
+                            <br><br>Price: €70,000 <br>Duration: 2-3 Months <br>Difficulty: Extreme <br>Group size: 2-3 (+2 Guides) <br> Equipment: Provided </p>
                         </div>
                     </div>
-                        <div class="background">
-                            <h1>Mount K2</h1>
-            
-                            <br><hr><br>
-            
-                            <p>Mount K2 yes yes</p>
+
+                    <br>
+
+                    <h2>Booking</h2>
+                    <p>Please fill in below if you would like to book a trip to Mt.Kilimanjaro</p>
+    
+                    <div class="queries">
+                            <input id="queriesInput"   type="text"  placeholder="Name:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Group Size:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Email:" />
+                            <input id="queriesInput"   type="text"  placeholder="Phone Number:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Card Number:"/>
+                        <div class="container">
+                            <input id="queriesInput"   type="text"  placeholder="Card Expiry:"/>
+                            <input id="queriesInput"   type="text"  placeholder="Csv:"/>
+                        </div>
+                        </div>
+                        <br>
+                    <div class="container">
+                        <div class="send_msg">
+                            <a href="#" class="send_msg">Place booking</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
-        <div class="button-container">
-            <button id="prevButton">Previous</button>
-            <button id="nextButton">Next</button>
-        </div>
+            <div class="button-container">
+                <button id="prevButton" class="action_btn"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+                <button id="nextButton" class="action_btn"><i class="fa-solid fa-arrow-right"></i> Next</button>
+            </div>            
         
     </body>
     <script>

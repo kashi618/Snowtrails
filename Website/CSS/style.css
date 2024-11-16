@@ -24,6 +24,20 @@
     font-style: italic;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -33,13 +47,8 @@
 
 body{
     width: auto;
-    background:black;
-    background-image:url(../Images/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center-top;
-    background-color: #000;
-    background-attachment: fixed;
-    background-size: cover;
+    background:whitesmoke;
+    height: 100%;
 }
 
 li{
@@ -57,26 +66,97 @@ a:hover{
 }
 
 /* Navigation Bar */
-.navbar{
-    position: relative;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 3.75rem;
-    /*max-width: 200%;*/
+    z-index: 1000;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    background: white;
     padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
-    position: relative;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
 }
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('../Images/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.logo-text {
+    background-color: white;
+    color: black;
+    font-size: 10vw; 
+    font-weight: bold;
+    text-align: center; 
+    margin: 0;
+    mix-blend-mode: screen;
+    padding: 1rem;
+}
+
+.slogan {
+    background-color: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(0.938rem);    
+    border-radius: 0.25rem;
+    text-align: center;         
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
+    margin-top: 1rem; 
+    padding: 0.5rem 1rem; 
+}
+
+.text-box {
+    background-color: white; 
+    padding: 2rem 3rem; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); 
+    text-align: left; 
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+.text-box h1 {
+    text-align: center; 
+    margin: 0 0 1rem 0; 
+    font-size: 5rem; 
+    color: #00008b;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-box p {
+    margin: 0; 
+    font-size: 1rem; 
+    color: #000; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-box img {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+
 
 .navbar .logo a{
     font-size: 1.5rem;
@@ -89,7 +169,7 @@ a:hover{
     color: #00008b;
 }
 .navbar .toggle_btn{
-    color: white;
+    color: #00008b;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
@@ -101,11 +181,12 @@ a:hover{
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
-    border-radius: 1.25rem;
+    border-radius: 0.25rem;
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
+    text-decoration: none;
 }
 
 .action_btn:hover{
@@ -138,48 +219,32 @@ a:hover{
     font-size: 1rem;
 }
 
-/* Queries and Messages*/
-.queriesheading {
-    text-align: center;
-    background-color: #00008b;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    margin-top: 2rem;
-    z-index: 1;
-    display: inline-block;
-    justify-content: center;
-}
-
 .queries{
     position: relative;
     margin-top: 2rem;
     z-index: 2;
 }
+
 #queriesInput {
-    width: 38rem;
+    width: 90%;
     height: 2.8rem;
     outline: none;
     background: whitesmoke;
-    border-radius: 1.625rem;
+    border-radius: 1rem;
     padding: 0 3.5rem 0 1.5rem;
-    font-size: 1rem;  
+    font-size: 1rem;
+    margin: 1rem;
 }
 
 #queriesMessage {
-    width: 38rem;
+    width: 90%;
     height: 25rem;
     outline: none;
     background: whitesmoke;
-    border-radius: 1.625rem;
+    border-radius: 1rem;
     padding: 0rem 3.5rem 0 1.5rem;
     font-size: 1rem;
+    margin: 1rem;
 }
 .send_msg {
     background-color: #00008b;
@@ -187,7 +252,9 @@ a:hover{
     display: inline-block;
     border-radius: 1rem;
     padding: 0.25rem 1.2rem 0.25rem 1.2rem;
+    text-decoration: none;
 }
+
 .send_msg:hover{
     scale: 1.05;
     color: #FFFFFF;
@@ -250,25 +317,6 @@ h6 {
     text-transform: uppercase;
     letter-spacing: 0.563rem;
   }
-  
-.logo-text {
-    background-color: white;
-    color: black;
-    font-size: 10vw; 
-    font-weight: bold;
-    margin: 0 auto; 
-    width: 50%;
-    top: 20px;
-    text-align: center; 
-    position: relative; 
-    mix-blend-mode: screen;
-}
-
-.logo-image-container {
-    background-size: cover;
-    position: relative; 
-    height: auto;
-  }
 
 .side-image {
     width: auto;
@@ -286,57 +334,41 @@ h6 {
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
 }
 
-.slogan {
-    background-color: rgba(0, 0, 0, 0.7); 
-    backdrop-filter: blur(0.938rem);    
-    border-radius: 0.25rem;
-    text-align: center;         
-    flex-grow: 1;               
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
-    margin-left: 35%;
-    margin-right: 35%;
-    padding-top: 0.313rem;
-    padding-bottom: 0.313rem;
-    clear: both;
-}
-
 .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    max-width: 70%;
-    margin: 0 auto;
+    justify-content: center; 
+    margin: 0 auto;  
+    max-width: 100%;
 }
 
 .polaroid {
-    width: 17rem;
-    background-color: whitesmoke;
-    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    padding: 0.625rem;
-    gap: 3rem;
-}
-
-.polaroid:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.poltext {
-    text-align: center;
-}
+    width: 300px;  /* Fixed width for the Polaroid */
+    height: 300px; /* Fixed height for the Polaroid */
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 2px;
+    overflow: hidden;
+  }
   
-.polaroid img {
+  .polaroid img {
     width: 100%;
-    height: 80%;
-}
-
-.poltext a {
-    color: black; 
-    text-decoration: none; 
-    font-size: 100%; 
-}
+    height: auto; 
+    object-fit: cover;
+  }
+  
+  .polaroid .caption {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+  }
 
 /*DROP DOWN MENU*/
 .dropdown_menu{
@@ -374,6 +406,28 @@ h6 {
     display: block;
 }
 
+.button-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 1000; /* Ensures the buttons are above other content */
+}
+
+button {
+    background-color: #00008b;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 300px) and (max-width: 992px)
 {
@@ -387,44 +441,6 @@ h6 {
         flex-direction: column;
         align-items: center;
     }
-
-    .slogan {
-        background-color: rgba(0, 0, 0, 0.7); 
-        backdrop-filter: blur(0.938rem);    
-        border-radius: 0.25rem;
-        text-align: center;
-        flex-grow: 1;
-        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
-        margin-left: 30%;
-        margin-right: 30%;
-        padding-top: 0.313rem;
-        padding-bottom: 0.313rem;
-        clear: both;
-        position: relative;
-        top: 5px;
-        z-index: 1;
-    }
-
-    .logo-text {
-        background-color: white;
-        color: black;
-        font-size: 10vw; 
-        font-weight: bold;
-        margin: 0 auto; 
-        padding: 0.625rem;
-        text-align: center; 
-        position: relative; 
-        top: -15%; 
-       /* left: 10%; 
-       /* transform: translate(-50%, -50%); // this stuff is messing up the logo so i comment out for now
-        mix-blend-mode: screen;*/
-        z-index: 1;
-    }
-    
-    .logo-image-container {
-        background-size: cover;
-        position: relative; 
-      }
 
     .navbar .links,
     .navbar .action_btn{
@@ -486,8 +502,3 @@ h6 {
         
     }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-  }
