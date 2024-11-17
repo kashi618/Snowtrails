@@ -185,7 +185,7 @@ body.loaded .fade-in {
     display: none;
 }
 
-.action_btn{
+.action_btn {
     background-color: #00008b;
     color: white;
     padding: 0.5rem 1rem;
@@ -195,18 +195,18 @@ body.loaded .fade-in {
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
-    transition: scale 0.2 ease;
+    transition: transform 0.2s ease;
     text-decoration: none;
+    display: inline-block;
 }
 
-.action_btn:hover{
-    scale: 1.05;
+.action_btn:hover {
+    transform: scale(1.05);
     color: #fff;
-
 }
-.action_btn:active{
-    scale: 0.95;
 
+.action_btn:active {
+    transform: scale(0.95);
 }
 
 /* Search Bar */
