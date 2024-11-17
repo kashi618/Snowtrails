@@ -121,6 +121,15 @@ a:hover{
     padding: 0.5rem 1rem; 
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out; 
+}
+
+body.loaded .fade-in {
+    opacity: 1;
+}
+
 .text-box {
     background-color: white; 
     padding: 2rem 3rem; 
@@ -373,14 +382,13 @@ h6 {
 /*DROP DOWN MENU*/
 .dropdown_menu{
     display: none;
-    position: absolute;
+    position: fixed;
     right: 2rem;
-    top: 60px;
+    top: 100px;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
+    background: whitesmoke;
+    border-radius: 3px;
     overflow: hidden;
     z-index: 10;
 }

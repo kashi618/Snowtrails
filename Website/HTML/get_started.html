@@ -44,10 +44,12 @@
             <li><a href="get_started.html" class="action_btn">Get Started</a></li>
     </div>     
 
-    <div class="background-container">
-        <div class="logo-text">GET STARTED</div>
-        <div class="slogan">
-            <h6>book your next adventure</h6>
+    <div class="fade-in">
+        <div class="background-container">
+            <div class="logo-text">GET STARTED</div>
+            <div class="slogan">
+                <h6>book your next adventure</h6>
+            </div>
         </div>
     </div>
 
@@ -311,14 +313,20 @@
         });
     }
 
+    function scrollToTop() {
+    window.scrollTo({ top: 500, behavior: 'smooth' });
+    }
+
     prevButton.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + contents.length) % contents.length;
         updateContent(currentIndex);
+        scrollToTop();
     });
 
     nextButton.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % contents.length;
         updateContent(currentIndex);
+        scrollToTop();
     });
 
     const nameInput = document.querySelector('input[placeholder="Name:"]');
@@ -358,6 +366,10 @@
         cardExpiryInput.value = '';
         csvInput.value = '';
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("loaded");
+     });
 
     </script>
 </html>

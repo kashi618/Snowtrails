@@ -37,10 +37,12 @@
                 <li><a href="get_started.html" class="action_btn">Get Started</a></li>
         </div>
          
-        <div class="background-container">
-            <div class="logo-text">SNOW TRAILS</div>
-            <div class="slogan">
-                <h6>expect • exciting • escapes</h6>
+        <div class="fade-in">
+            <div class="background-container">
+                <div class="logo-text">SNOW TRAILS</div>
+                <div class="slogan">
+                    <h6>expect • exciting • escapes</h6>
+                </div>
             </div>
         </div>
 
@@ -78,6 +80,10 @@
             ? 'fa-solid fa-xmark'
             : 'fa-solid fa-bars'
         }
+
+        document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("loaded");
+     });
     </script>
 
 </html>

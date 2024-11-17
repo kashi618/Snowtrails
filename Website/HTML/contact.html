@@ -41,10 +41,12 @@
                 <li><a href="get_started.html" class="action_btn">Get Started</a></li>
         </div>
 
-        <div class="background-container">
-            <div class="logo-text">CONTACT US</div>
-            <div class="slogan">
-                <h6>We would love to hear from you</h6>
+        <div class="fade-in">
+            <div class="background-container">
+                <div class="logo-text">CONTACT US</div>
+                <div class="slogan">
+                    <h6>We would love to hear from you</h6>
+                </div>
             </div>
         </div>
 
@@ -152,5 +154,10 @@
         phoneNumberInput.value = '';
         feedbackInput.value = '';
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+     });
+
     </script>
 </html>
