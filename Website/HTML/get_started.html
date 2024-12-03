@@ -180,42 +180,38 @@
             <div class="button-container">
                 <button id="prevButton" class="action_btn"><i class="fa-solid fa-arrow-left"></i> Previous</button>
                 <button id="nextButton" class="action_btn"><i class="fa-solid fa-arrow-right"></i> Next</button>
-            </div>     
+            </div>   
 
-            <form onsubmit="validateForm()">
-                <label for="name">First Name: </label>
-                <input type="text" id="firstName" name="firstName">
-
-                <label for="name">Last Name: </label>
-                <input type="text" id="lastName" name="lastName">
-
-                <label for="email">Email: </label>
-                <input type="text" id="email" name="email">
-
-                <label for="name">Card Number: </label>
-                <input type="text" id="lastName" name="lastName">
-
-                <label for="name">Card Expiry: </label>
-                <input type="text" id="lastName" name="lastName">
-
-                <label for="name">: </label>
-                <input type="text" id="lastName" name="lastName">
-            </form>
-
-            <div id="bookingConfirmation" style="display: none;">
-                <div class="text-box">
-                    <h2>Your Booking Details:</h2>
-                    <p><strong>Name:</strong> <span id="submittedName"></span></p>
-                    <p><strong>Group Size:</strong> <span id="submittedGroupSize"></span></p>
-                    <p><strong>Email:</strong> <span id="submittedEmail"></span></p>
-                    <p><strong>Phone Number:</strong> <span id="submittedPhone"></span></p>
-                    <p><strong>Card Number:</strong> <span id="submittedCardNumber"></span></p>
-                    <p><strong>Card Expiry:</strong> <span id="submittedCardExpiry"></span></p>
-                    <p><strong>CSV:</strong> <span id="submittedCsv"></span></p>
-                    <p>Thank you for booking a trip with Snowtrails, Hope to see you soon!</p>
-                </div>
-                <br>
+            <div class="queries" id="queriesInput">
+                <form onsubmit="validateForm()">
+                    <label for="name">First Name: </label>
+                    <input type="text" id="firstName" name="firstName"><br><br>
+                    
+                    <label for="name">Last Name: </label>
+                    
+                    <input type="text" id="lastName" name="lastName">
+                    <br><br>
+                    <label for="email">Email: </label>
+                    
+                    <input type="text" id="email" name="email">
+                    <br><br>
+                    <label for="name">Card Number: </label>
+                    
+                    <input type="text" id="lastName" name="lastName">
+                    <br><br>
+                    <label for="name">Card Expiry: </label>
+                    
+                    <input type="text" id="lastName" name="lastName">
+                    <br><br>
+                    <label for="name">: </label>
+                    
+                    <input type="text" id="lastName" name="lastName">
+                    <br><br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
             </div>
+            
             
             <hr style="color: lightgray; width: 98%; margin: 0 auto;">
 
