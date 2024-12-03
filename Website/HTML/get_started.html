@@ -182,29 +182,26 @@
                 <button id="nextButton" class="action_btn"><i class="fa-solid fa-arrow-right"></i> Next</button>
             </div>     
 
-            <div class="text-box">
-                <div class="queries">
-                        <input id="queriesInput"   type="text"  placeholder="Name:"/>
-                        <input id="queriesInput"   type="text"  placeholder="Group Size:"/>
-                        <input id="queriesInput"   type="text"  placeholder="Email:" />
-                        <input id="queriesInput"   type="text"  placeholder="Phone Number:"/>
-                        <input id="queriesInput"   type="text"  placeholder="Card Number:"/>
-                    <div class="container">
-                        <input id="queriesInput"   type="text"  placeholder="Card Expiry:"/>
-                        <input id="queriesInput"   type="text"  placeholder="Csv:"/>
-                    </div>
+            <form onsubmit="validateForm()">
+                <label for="name">First Name: </label>
+                <input type="text" id="firstName" name="firstName">
 
-                    <br>
+                <label for="name">Last Name: </label>
+                <input type="text" id="lastName" name="lastName">
 
-                    <div class="container">
-                        <div class="send_msg">
-                            <button id="submitBookingBtn" class="send_msg">Place booking</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email">
 
-            
+                <label for="name">Card Number: </label>
+                <input type="text" id="lastName" name="lastName">
+
+                <label for="name">Card Expiry: </label>
+                <input type="text" id="lastName" name="lastName">
+
+                <label for="name">: </label>
+                <input type="text" id="lastName" name="lastName">
+            </form>
+
             <div id="bookingConfirmation" style="display: none;">
                 <div class="text-box">
                     <h2>Your Booking Details:</h2>
