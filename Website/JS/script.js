@@ -42,7 +42,8 @@ function validateQuery() {
     return true;
 }
 
-const toggleBtn = document.querySelector('.toggle_btn')
+    //DROPDOWN MENU
+    const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const dropDownMenu = document.querySelector('.dropdown_menu')
         toggleBtn.onclick = function (){
@@ -53,11 +54,13 @@ const toggleBtn = document.querySelector('.toggle_btn')
             : 'fa-solid fa-bars'
         }
 
-document.addEventListener("DOMContentLoaded", () => {
-            document.body.classList.add("loaded");
-         });
+    //PAGE TITLE FADE IN
+    document.addEventListener("DOMContentLoaded", () =>{
+        document.body.classList.add("loaded");
+    });
 
-         const contents = document.querySelectorAll('.content');
+    //Get Started Page prev/next buttons
+    const contents = document.querySelectorAll('.content');
     const prevButton = document.getElementById('prevButton');
     const nextButton = document.getElementById('nextButton');
 
@@ -69,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    //resets scroll to view mountain after pressing prev/next
     function scrollToTop() {
     window.scrollTo({ top: 500, behavior: 'smooth' });
     }
