@@ -3,6 +3,7 @@ function validateForm() {
     let firstName  = document.getElementById("firstName").value;
     let lastName   = document.getElementById("lastName").value;
     let email      = document.getElementById("email").value;
+    let phoneNumber= document.getElementById("phoneNumber").value;
     let cardNumber = document.getElementById("cardNumber").value;
     let cardExpiry = document.getElementById("cardExpiry").value;
     let cardCSV    = document.getElementById("cardCSV").value;
