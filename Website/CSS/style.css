@@ -424,7 +424,7 @@ h6 {
     justify-content: space-between;
     width: 100%;
     padding: 0 20px;
-    z-index: 1000; /* Ensures the buttons are above other content */
+    z-index: 999; /* Ensures the buttons are above other content */
 }
 
 button {

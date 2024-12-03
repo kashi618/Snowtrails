@@ -116,52 +116,5 @@
     
 
     </body>
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-        toggleBtn.onclick = function (){
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-
-    const firstNameInput = document.querySelector('input[placeholder="First Name:"]');
-    const lastNameInput = document.querySelector('input[placeholder="Last Name:"]');
-    const emailInput = document.querySelector('input[placeholder="Email:"]');
-    const phoneNumberInput = document.querySelector('input[placeholder="Phone Number:"]');
-    const feedbackInput = document.querySelector('input[placeholder="Feedback:"]');
-    const bookingConfirmation = document.getElementById('FeedbackConfirmation');
-
-    const submittedfirstName = document.getElementById('submittedFirstName');
-    const submittedlastName = document.getElementById('submittedLastName');
-    const submittedEmail = document.getElementById('submittedEmail');
-    const submittedPhoneNumber = document.getElementById('submittedPhoneNumber');
-    const submittedFeedback = document.getElementById('submittedFeedback');
-
-
-    document.getElementById('submitFeedbackBtn').addEventListener('click', () => {
-        
-        bookingConfirmation.style.display = 'block';
-
-        submittedfirstName.textContent = firstNameInput.value;
-        submittedlastName.textContent = lastNameInput.value;
-        submittedEmail.textContent = emailInput.value;
-        submittedPhoneNumber.textContent = phoneNumberInput.value;
-        submittedFeedback.textContent = feedbackInput.value;
-
-        firstNameInput.value = '';
-        lastNameInput.value = '';
-        emailInput.value = '';
-        phoneNumberInput.value = '';
-        feedbackInput.value = '';
-    });
-
-    document.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.add("loaded");
-     });
-
-    </script>
+    <script src="../JS/script.js"></script>
 </html>
