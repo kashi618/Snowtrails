@@ -1,4 +1,49 @@
-const toggleBtn = document.querySelector('.toggle_btn')
+function validateForm() {
+    // Getting information about user
+    let firstName  = document.getElementById("firstName").value;
+    let lastName   = document.getElementById("lastName").value;
+    let email      = document.getElementById("email").value;
+    let cardNumber = document.getElementById("cardNumber").value;
+    let cardExpiry = document.getElementById("cardExpiry").value;
+    let cardCSV    = document.getElementById("cardCSV").value;
+
+    if (firstName===""||lastName===""||email===""||cardNumber===""||cardExpiry===""|cardCSV==="") {
+        alert("One or more missing fields. Please try again later.");
+        return false;
+    }
+
+    // Validating email
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+    alert("Your details have been sent to snowtrails!\nWe will contact you shortly.alert("Hello! I am an alert box!!");");
+    return true;
+}
+
+function validateQuery() {
+    let firstName  = document.getElementById("firstName").value;
+    let lastName   = document.getElementById("lastName").value;
+    let email      = document.getElementById("email").value;
+    let complaint      = document.getElementById("complaint").value;
+
+    if (firstName===""||lastName===""||email===""||complaint==="") {
+        alert("One or more missing fields. Please try again later.");
+        return false;
+    }
+
+    // Validating email
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+    return true;
+}
+
+    //DROPDOWN MENU
+    const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const dropDownMenu = document.querySelector('.dropdown_menu')
         toggleBtn.onclick = function (){
@@ -9,11 +54,13 @@ const toggleBtn = document.querySelector('.toggle_btn')
             : 'fa-solid fa-bars'
         }
 
-document.addEventListener("DOMContentLoaded", () => {
-            document.body.classList.add("loaded");
-         });
+    //PAGE TITLE FADE IN
+    document.addEventListener("DOMContentLoaded", () =>{
+        document.body.classList.add("loaded");
+    });
 
-         const contents = document.querySelectorAll('.content');
+    //Get Started Page prev/next buttons
+    const contents = document.querySelectorAll('.content');
     const prevButton = document.getElementById('prevButton');
     const nextButton = document.getElementById('nextButton');
 
@@ -25,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    //resets scroll to view mountain after pressing prev/next
     function scrollToTop() {
     window.scrollTo({ top: 500, behavior: 'smooth' });
     }
