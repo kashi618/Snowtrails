@@ -50,42 +50,34 @@
 
         <br>
 
-            <div class="text-box">
-                <h2>We here at Snowtrails would love to receive your feedback</h2>
-                <p>Please fill in below if you would like to contact us.</p>
-
-                <div class="queries">
-                    <input id="queriesInput"   type="text"  placeholder="First Name:"/>
-                    <input id="queriesInput"   type="text"  placeholder="Last Name:"/>
-                    <input id="queriesInput"   type="email"  placeholder="Email:" />
-                    <input id="queriesInput"   type="number" placeholder="Phone Number:"/>
-                    <input id="queriesMessage"   type="text"  placeholder="Feedback:"/>
-                </div>
+        <div class="text-box">
+            <h2>We here at Snowtrails would love to receive your feedback</h2>
+            <p>Please fill in below if you would like to contact us.</p>
+        
+            <form id="feedbackForm" onsubmit="return validateFeedbackForm(event);">
+        
+                <input type="text" id="CfirstName" name="firstName" placeholder="First Name"><br><br>
                 
-                <br>
-
+                <input type="text" id="ClastName" name="lastName" placeholder="Last Name"><br><br>
+                
+                <input type="email" id="Cemail" name="email" placeholder="Email"><br><br>
+                
+                <input type="tel" id="CphoneNumber" name="phoneNumber" placeholder="Phone Number" pattern="\+?[1-9]\d{1,14}" title="Phone number should start with + followed by digits"><br><br>
+                
+                <textarea id="Feedback" name="feedback" placeholder="Type your feedback here"></textarea><br><br>
+                
                 <div class="container">
-                    <div class="send_msg">
-                        <button id="submitFeedbackBtn" class="send_msg">Share Feedback</button>
-                    </div>
+                    <input type="submit" value="Submit">
                 </div>
-            </div>
+            </form>
+            
+            <div id="submittedData" style="margin-top: 20px;"></div>
+            
+            <div id="errorMessage" style="color: red; display: none;"></div>
+            
+            <button id="submitButton" style="display:none;" onclick="submitFeedbackForm();">Share Feedback</button>
         </div>
-
-        <br>
-
-        <div id="FeedbackConfirmation" style="display: none;">
-            <div class="text-box">
-                <h2>Your Feedback:</h2>
-                <p><strong>First Name:</strong> <span id="submittedFirstName"></span></p>
-                <p><strong>Last Name:</strong> <span id="submittedLastName"></span></p>
-                <p><strong>Email:</strong> <span id="submittedEmail"></span></p>
-                <p><strong>Phone Number:</strong> <span id="submittedPhoneNumber"></span></p>
-                <p><strong>Feedback:</strong> <span id="submittedFeedback"></span></p>
-                <p>Thank you for sharing your valuable Feedback.</p>
-            </div>
-            <br>
-        </div>
+        
 
             <br>
 
@@ -115,4 +107,5 @@
 
     </body>
     <script src="../JS/script.js"></script>
+    <script src="../JS/contact.js"></script>
 </html>
