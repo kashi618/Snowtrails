@@ -13,6 +13,7 @@ function validateForm(event) {
     const cardNumber = document.getElementById('cardNumber').value;
     const cardExpiry = document.getElementById('cardExpiry').value;
     const cardCSV = document.getElementById('cardCSV').value;
+    const mountain = document.getElementById("mountain").value;
 
     // Create an array to collect error messages
     const errorMessages = [];
@@ -52,24 +53,29 @@ function validateForm(event) {
         errorMessages.push("Please enter a valid card CSV (3 digits).");
     }
 
+    // Add validation for the mountain field
+    if (!mountain || mountain === "") {
+        errorMessages.push("Please select a mountain.");
+    }
+
     // If there are any error messages, display them
     if (errorMessages.length > 0) {
         document.getElementById('errorMessage').style.display = 'block';
         document.getElementById('errorMessage').innerHTML = errorMessages.join('<br>');
-        return false;  // Prevent form submission
+        return false;  
     }
 
     // If all validations pass, display the submitted data
     const submittedDataDiv = document.getElementById('submittedData');
     submittedDataDiv.innerHTML = `
-        <h3>Submitted Data:</h3>
-        <p><strong>First Name:</strong> ${firstName}</p>
-        <p><strong>Last Name:</strong> ${lastName}</p>
+        <h3>Thank you for booking with Snowtrails, Please confirm this is the right info and place your booking:</h3>
+        <p><strong>Name:</strong> ${firstName} ${lastName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone Number:</strong> ${phoneNumber}</p>
         <p><strong>Card Number:</strong> ${cardNumber}</p>
         <p><strong>Card Expiry:</strong> ${cardExpiry}</p>
         <p><strong>Card CSV:</strong> ${cardCSV}</p>
+        <p><strong>Mountain:</strong> ${mountain}</p>
     `;
 
     // Show the hidden submit button after displaying data
@@ -86,7 +92,7 @@ function submitForm() {
     // Show success message after submission
     const successMessage = document.getElementById('successMessage');
     successMessage.style.display = 'block';
-    successMessage.innerHTML = "Form submitted successfully!";  // Show success message
+    successMessage.innerHTML = "Booking submitted successfully!";  
 
     // Hide the submit button after final submission
     document.getElementById('submitButton').style.display = 'none';  

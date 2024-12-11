@@ -167,38 +167,48 @@
 
             <div class="text-box">
                 <form id="myForm" onsubmit="return validateForm(event);">
-                    <div class="queriesInput">
-                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required><br><br>
-                    </div>
+                    
+                    <select id="mountain" name="mountain">
+                        <option value="">Select a mountain</option>
+                        <option value="Mt. Everest">Mount Everest</option>
+                        <option value="Mt. Bianco">Mount Blanc</option>
+                        <option value="Mt. Denali">Mount Denali</option>
+                        <option value="Mt.K2">Mount K2</option>
+                        <option value="Mt.Kilimanjaro">Mount Kilimanjaro</option>
+                    </select><br><br>
+
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name"><br><br>
                 
-                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br><br>
                 
-                    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                    <input type="email" id="email" name="email" placeholder="Email"><br><br>
                 
-                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required pattern="[\+][0-9]{1,3}[-][0-9]{4,12}" placeholder="+1-1234567890"><br><br>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"placeholder="+1-1234567890"><br><br>
                 
-                    <input type="text" id="cardNumber" name="cardNumber" placeholder="Card Number" required pattern="^\d{16}$" placeholder="1234567812345678"><br><br>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="Card Number"placeholder="1234567812345678"><br><br>
                 
-                    <input type="text" id="cardExpiry" name="cardExpiry" placeholder="Card Expiry (MM/YY)" required pattern="^(0[1-9]|1[0-2])\/\d{2}$" placeholder="MM/YY"><br><br>
+                    <input type="text" id="cardExpiry" name="cardExpiry" placeholder="Card Expiry (MM/YY)"placeholder="MM/YY"><br><br>
                 
-                    <input type="text" id="cardCSV" name="cardCSV" placeholder="Card CSV" required pattern="^\d{3}$" placeholder="123"><br><br>
+                    <input type="text" id="cardCSV" name="cardCSV" placeholder="Card CSV"placeholder="123"><br><br>
                 
+                <div class="container">
                     <input type="submit" value="Submit">
+                </div>
+
                 </form>
                 
                 <!-- Div to show submitted data -->
                 <div id="submittedData" style="margin-top: 20px;"></div>
                 
-                <!-- Div for success message -->
-                <div id="successMessage" style="color: green; display: none;"></div>
-                
                 <!-- Div for error messages -->
                 <div id="errorMessage" style="color: red; display: none;"></div>
                 
                 <!-- Hidden Submit Button -->
-                <button id="submitButton" style="display:none;" onclick="submitForm();">Submit</button>
+                <button id="submitButton" style="display:none;" onclick="submitForm();">Confirm</button>
                 
             </div>
+
+            <br><br>
 
             <hr style="color: lightgray; width: 98%; margin: 0 auto;">
 
